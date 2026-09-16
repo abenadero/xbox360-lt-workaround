@@ -1,0 +1,11 @@
+[Unit]
+Description=Xbox 360 LT calibration workaround
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/xbox360-lt-fix.py
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
